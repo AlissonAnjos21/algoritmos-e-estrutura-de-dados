@@ -17,5 +17,8 @@ public class Teste {
         lista.adicionar(63);
         System.out.println(lista);
 
+        lista.limpar();
+        System.out.println(lista);
+
     }
 }
