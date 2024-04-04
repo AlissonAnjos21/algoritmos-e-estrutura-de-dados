@@ -30,4 +30,11 @@ public class No<T> {
         this.proximo = proximo;
     }
 
+    @Override
+    public String toString() {
+        return "No{" +
+                "elemento=" + elemento +
+                ",\nproximo=" + proximo +
+                "}";
+    }
 }
