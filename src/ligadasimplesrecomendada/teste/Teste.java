@@ -11,5 +11,11 @@ public class Teste {
         lista.adicionar(21);
         System.out.println(lista);
 
+        lista.adicionar(42);
+        System.out.println(lista);
+
+        lista.adicionar(63);
+        System.out.println(lista);
+
     }
 }
