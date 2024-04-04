@@ -13,7 +13,7 @@ public class ListaEncadeadaSimples<T> {
 
     public ListaEncadeadaSimples(){
         this.head = null;
-        this.head = null;
+        this.tail = null;
     }
 
     public void adicionarFinal(No<T> elemento){
@@ -23,6 +23,16 @@ public class ListaEncadeadaSimples<T> {
             this.head = elemento;
         }
         this.tail = elemento;
+        this.tamanho++;
+    }
+
+    public void adicionarInicio(No<T> elemento){
+        if(this.tamanho > 0){
+          elemento.setProximo(this.head);
+        }else{
+            this.tail = elemento;
+        }
+        this.head = elemento;
         this.tamanho++;
     }
 
