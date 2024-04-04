@@ -8,5 +8,8 @@ public class Teste {
         lista.adicionar(1);
         System.out.println(lista);
 
+        lista.adicionar(21);
+        System.out.println(lista);
+
     }
 }
