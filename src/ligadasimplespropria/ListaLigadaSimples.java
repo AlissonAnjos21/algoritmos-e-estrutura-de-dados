@@ -1,17 +1,17 @@
-package ligadasimples;
+package ligadasimplespropria;
 
-public class ListaEncadeadaSimples<T> {
+public class ListaLigadaSimples<T> {
 
     private No<T> head;
     private No<T> tail;
     private int tamanho = 0;
 
-    public ListaEncadeadaSimples(No<T> elemento){
+    public ListaLigadaSimples(No<T> elemento){
         this.head = elemento;
         this.tail = elemento;
     }
 
-    public ListaEncadeadaSimples(){
+    public ListaLigadaSimples(){
         this.head = null;
         this.tail = null;
     }

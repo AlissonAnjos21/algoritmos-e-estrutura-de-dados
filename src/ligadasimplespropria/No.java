@@ -1,4 +1,4 @@
-package ligadasimples;
+package ligadasimplespropria;
 
 public class No<T> {
     private T elemento;

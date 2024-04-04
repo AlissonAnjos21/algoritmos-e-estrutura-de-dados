@@ -1,11 +1,11 @@
-package ligadasimples.teste;
+package ligadasimplespropria.teste;
 
-import ligadasimples.ListaEncadeadaSimples;
-import ligadasimples.No;
+import ligadasimplespropria.ListaLigadaSimples;
+import ligadasimplespropria.No;
 
 public class Teste {
     public static void main(String[] args) {
-        ListaEncadeadaSimples<Integer> lista = new ListaEncadeadaSimples<>();
+        ListaLigadaSimples<Integer> lista = new ListaLigadaSimples<>();
 
         No<Integer> no1 = new No<>(1);
         No<Integer> no2 = new No<>(2);
