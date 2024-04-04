@@ -21,6 +21,27 @@ public class ListaLigadaSimples<T> {
     }
 
     /*
+    public void limpar(){
+        // Forma mais simples porem menos recomendada (questoes de optimizacao de memoria)
+        this.inicio = null;
+        this.ultimo = null;
+        this.tamanho = 0;
+    }
+     */
+
+    public void limpar(){
+        for(No<T> atual = this.inicio; atual != null; ){ //intencionalmente deixado sem incremento
+            No<T> proximo = atual.getProximo();
+            atual.setElemento(null);
+            atual.setProximo(null);
+            atual = proximo;
+        }
+        this.inicio = null;
+        this.ultimo = null;
+        this.tamanho = 0;
+    }
+
+    /*
     @Override
     public String toString() {
         return "ListaLigadaSimples{" +
