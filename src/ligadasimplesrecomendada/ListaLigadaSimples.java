@@ -53,14 +53,16 @@ public class ListaLigadaSimples<T> {
         }
 
         int pos = 0;
-        No<T> anterior = this.inicio;
+        No<T> atual = this.inicio;
         while(pos < posicao){
-            anterior = anterior.getProximo();
+            atual = atual.getProximo();
             pos++;
         }
-        return anterior.getElemento();
+        return atual.getElemento();
     }
      */
+
+
 
     /*
     @Override
