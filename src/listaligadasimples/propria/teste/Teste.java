@@ -1,7 +1,7 @@
-package ligadasimplespropria.teste;
+package listaligadasimples.propria.teste;
 
-import ligadasimplespropria.ListaLigadaSimples;
-import ligadasimplespropria.No;
+import listaligadasimples.propria.ListaLigadaSimples;
+import listaligadasimples.propria.No;
 
 public class Teste {
     public static void main(String[] args) {

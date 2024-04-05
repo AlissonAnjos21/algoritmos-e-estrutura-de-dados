@@ -1,4 +1,4 @@
-package ligadasimplesrecomendada;
+package listaligadasimples.recomendada;
 
 public class ListaLigadaSimples<T> {
     private No<T> inicio;

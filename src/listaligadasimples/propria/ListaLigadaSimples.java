@@ -1,4 +1,4 @@
-package ligadasimplespropria;
+package listaligadasimples.propria;
 
 public class ListaLigadaSimples<T> {
 

@@ -1,6 +1,6 @@
-package ligadasimplesrecomendada.teste;
+package listaligadasimples.recomendada.teste;
 
-import ligadasimplesrecomendada.ListaLigadaSimples;
+import listaligadasimples.recomendada.ListaLigadaSimples;
 
 public class Teste {
     public static void main(String[] args) {

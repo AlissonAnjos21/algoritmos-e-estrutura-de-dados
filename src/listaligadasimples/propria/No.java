@@ -1,4 +1,4 @@
-package ligadasimplespropria;
+package listaligadasimples.propria;
 
 public class No<T> {
     private T elemento;
