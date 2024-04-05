@@ -28,6 +28,27 @@ public class ListaLigadaSimples<T> {
         this.tamanho++;
     }
 
+    public void adicionarPosicao(int posicao, T elemento){
+        if(posicao < 0 || posicao > this.tamanho){
+            throw new IllegalArgumentException("Posicao invalida");
+        }
+
+        if(posicao == 0){
+            this.adicionarInicio(elemento);
+        }else if(posicao == this.tamanho){
+            this.adicionarUltimo(elemento);
+        }else{
+            // Em uma posicao que nao eh o inicio nem o final (meio da lista)
+            No<T> anterior = this.buscarNo(posicao-1);
+            No<T> proximo = anterior.getProximo();
+            No<T> no = new No<>(elemento);
+            no.setProximo(proximo);
+            anterior.setProximo(no);
+            this.tamanho++;
+        }
+
+    }
+
     public int getTamanho(){
         return this.tamanho;
     }
