@@ -62,7 +62,21 @@ public class ListaLigadaSimples<T> {
     }
      */
 
+    public void buscarPorPosicao(int posicao){
 
+    }
+
+    public int buscarPorElemento(T elemento){
+        int posicao = 0;
+        for(No<T> atual = this.inicio; atual != null; ){
+            if(atual.getElemento().equals(elemento)){
+                return posicao;
+            }
+            atual = atual.getProximo();
+            posicao++;
+        }
+        return NAO_EXISTE;
+    }
 
     /*
     @Override
