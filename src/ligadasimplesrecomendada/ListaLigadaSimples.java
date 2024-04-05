@@ -62,8 +62,19 @@ public class ListaLigadaSimples<T> {
     }
      */
 
-    public void buscarPorPosicao(int posicao){
+    private No<T> buscarNo(int posicao){
+        if(!(posicao >= 0 && posicao < this.tamanho)){
+            throw new IllegalArgumentException("Posicao invalida");
+        }
+        No<T> atual = this.inicio;
+        for(int i = 0; i < posicao; i++){
+            atual = atual.getProximo();
+        }
+        return atual;
+    }
 
+    public T buscarPorPosicao(int posicao){
+        return buscarNo(posicao).getElemento();
     }
 
     public int buscarPorElemento(T elemento){
