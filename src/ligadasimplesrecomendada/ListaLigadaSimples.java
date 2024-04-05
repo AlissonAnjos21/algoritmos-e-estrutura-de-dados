@@ -18,7 +18,14 @@ public class ListaLigadaSimples<T> {
     }
 
     public void adicionarInicio(T elemento){
-
+        No<T> no = new No<T>(elemento);
+        if(this.tamanho == 0){
+            this.ultimo = no;
+        }else{
+            no.setProximo(this.inicio);
+        }
+        this.inicio = no;
+        this.tamanho++;
     }
 
     public int getTamanho(){
