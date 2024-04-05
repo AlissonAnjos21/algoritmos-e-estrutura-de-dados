@@ -4,6 +4,7 @@ public class ListaLigadaSimples<T> {
     private No<T> inicio;
     private No<T> ultimo;
     private int tamanho = 0;
+    private int NAO_EXISTE = -1;
 
     public void adicionar(T elemento){
         No<T> no = new No<>(elemento);
@@ -40,6 +41,26 @@ public class ListaLigadaSimples<T> {
         this.ultimo = null;
         this.tamanho = 0;
     }
+
+    /*
+    public T buscarPorPosicao(int posicao){
+        if(!(posicao >= 0 && posicao < this.tamanho)){
+            throw new IllegalArgumentException();
+        }
+
+        if(posicao == 0){
+            return this.inicio.getElemento();
+        }
+
+        int pos = 0;
+        No<T> anterior = this.inicio;
+        while(pos < posicao){
+            anterior = anterior.getProximo();
+            pos++;
+        }
+        return anterior.getElemento();
+    }
+     */
 
     /*
     @Override

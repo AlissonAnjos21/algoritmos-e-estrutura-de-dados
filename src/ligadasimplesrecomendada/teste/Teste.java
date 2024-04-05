@@ -17,6 +17,13 @@ public class Teste {
         lista.adicionar(63);
         System.out.println(lista);
 
+        System.out.println(lista.buscarPorPosicao(0));
+        System.out.println(lista.buscarPorPosicao(1));
+        System.out.println(lista.buscarPorPosicao(2));
+        System.out.println(lista.buscarPorPosicao(3));
+        System.out.println(lista.buscarPorPosicao(4)); // Nao existe
+
+
         lista.limpar();
         System.out.println(lista);
 
