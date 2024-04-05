@@ -5,16 +5,16 @@ import ligadasimplesrecomendada.ListaLigadaSimples;
 public class Teste {
     public static void main(String[] args) {
         ListaLigadaSimples<Integer> lista = new ListaLigadaSimples<>();
-        lista.adicionar(1);
+        lista.adicionarInicio(1);
         System.out.println(lista);
 
-        lista.adicionar(21);
+        lista.adicionarInicio(21);
         System.out.println(lista);
 
-        lista.adicionar(42);
+        lista.adicionarInicio(42);
         System.out.println(lista);
 
-        lista.adicionar(63);
+        lista.adicionarInicio(63);
         System.out.println(lista);
 
         System.out.println("BUSCAR POR ELEMENTO: ");

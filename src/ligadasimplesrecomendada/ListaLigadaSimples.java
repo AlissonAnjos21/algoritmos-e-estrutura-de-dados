@@ -6,7 +6,7 @@ public class ListaLigadaSimples<T> {
     private int tamanho = 0;
     private int NAO_EXISTE = -1;
 
-    public void adicionar(T elemento){
+    public void adicionarInicio(T elemento){
         No<T> no = new No<>(elemento);
         if(this.tamanho == 0){
             this.inicio = no;
