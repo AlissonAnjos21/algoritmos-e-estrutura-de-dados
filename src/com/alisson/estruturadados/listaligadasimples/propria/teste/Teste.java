@@ -1,7 +1,7 @@
-package listaligadasimples.propria.teste;
+package com.alisson.estruturadados.listaligadasimples.propria.teste;
 
-import listaligadasimples.propria.ListaLigadaSimples;
-import listaligadasimples.propria.No;
+import com.alisson.estruturadados.listaligadasimples.propria.ListaLigadaSimples;
+import com.alisson.estruturadados.listaligadasimples.propria.No;
 
 public class Teste {
     public static void main(String[] args) {

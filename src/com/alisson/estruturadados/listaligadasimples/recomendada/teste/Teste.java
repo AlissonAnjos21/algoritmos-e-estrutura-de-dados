@@ -1,6 +1,6 @@
-package listaligadasimples.recomendada.teste;
+package com.alisson.estruturadados.listaligadasimples.recomendada.teste;
 
-import listaligadasimples.recomendada.ListaLigadaSimples;
+import com.alisson.estruturadados.listaligadasimples.recomendada.ListaLigadaSimples;
 
 public class Teste {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package listaligadasimples.recomendada;
+package com.alisson.estruturadados.listaligadasimples.recomendada;
 
 public class ListaLigadaSimples<T> {
     private No<T> inicio;

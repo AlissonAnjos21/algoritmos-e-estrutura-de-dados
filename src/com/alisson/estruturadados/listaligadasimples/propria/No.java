@@ -1,4 +1,4 @@
-package listaligadasimples.propria;
+package com.alisson.estruturadados.listaligadasimples.propria;
 
 public class No<T> {
     private T elemento;
