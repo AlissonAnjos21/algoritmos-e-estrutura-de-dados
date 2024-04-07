@@ -41,6 +41,14 @@ public class ListaEncadeada {
                 prevPtr.next = temp;
             }
         }
+
+        @Override
+        public String toString() {
+            return "Element{" +
+                    "data=" + data +
+                    ", next=" + next +
+                    '}';
+        }
     }
 
     public ListaEncadeada(){}
@@ -126,5 +134,13 @@ public class ListaEncadeada {
         if(ptr == this.tail){
             prevPtr = this.tail;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "ListaEncadeada{" +
+                "head=" + head +
+                ", tail=" + tail +
+                '}';
     }
 }
