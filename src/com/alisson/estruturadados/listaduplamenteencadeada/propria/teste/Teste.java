@@ -10,7 +10,9 @@ public class Teste {
         lista.inserirInicio(42);
         lista.inserirInicio(63);
         lista.inserirInicio(84);
+        lista.inserirFim(2);
         lista.inserirInicio(105);
+        lista.inserirFim(3);
 
         System.out.println(lista);
 

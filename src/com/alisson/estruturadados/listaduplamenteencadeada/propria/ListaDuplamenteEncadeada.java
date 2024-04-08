@@ -26,6 +26,21 @@ public class ListaDuplamenteEncadeada<T> {
         this.head = no;
     }
 
+    public void inserirFim(T data){
+        No<T> no = new No<>(data);
+        no.setPrev(this.tail);
+        if(this.head != null){
+            this.tail.setNext(no);
+        }else{
+            this.head = no;
+        }
+        this.tail = no;
+    }
+
+    public void remover(T data){
+
+    }
+
     @Override
     public String toString() {
        StringBuilder stringBuilder = new StringBuilder();
