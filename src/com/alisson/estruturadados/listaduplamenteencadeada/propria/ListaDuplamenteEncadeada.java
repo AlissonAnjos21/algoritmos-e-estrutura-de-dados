@@ -38,7 +38,24 @@ public class ListaDuplamenteEncadeada<T> {
     }
 
     public void remover(T data){
+        No<T> ptr = this.head;
 
+        while(ptr != null && ptr.getData() != data){
+            ptr = ptr.getNext();
+        }
+
+        if(ptr == null){ //Valor nao existe na lista
+            System.out.println("Valor não encontrado");
+        }else if(ptr.getNext() == null){ //Valor eh o ultimo da lista
+            ptr.getPrev().setNext(null);
+            this.tail = ptr.getPrev();
+        }else if(ptr.getPrev() == null){ //Valor eh o primeiro da lista
+            ptr.getNext().setPrev(null);
+            this.head = ptr.getNext();
+        }else{ //Valor ta no meio da lista
+            ptr.getPrev().setNext(ptr.getNext());
+            ptr.getNext().setPrev(ptr.getPrev());
+        }
     }
 
     @Override
