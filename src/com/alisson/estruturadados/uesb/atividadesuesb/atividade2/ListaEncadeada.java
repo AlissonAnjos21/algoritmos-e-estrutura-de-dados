@@ -111,7 +111,7 @@ public class ListaEncadeada {
         }
     }
 
-    public void extrair(Object item) throws ObjetoNaoEncotradoException{
+    public void extrair(Object item) throws ObjetoNaoEncontradoException {
         Element ptr = this.head;
         Element prevPtr = null;
 
@@ -121,7 +121,7 @@ public class ListaEncadeada {
         }
 
         if(ptr == null){
-            throw new ObjetoNaoEncotradoException("Objeto não encontrado");
+            throw new ObjetoNaoEncontradoException("Objeto não encontrado");
         }
 
 
