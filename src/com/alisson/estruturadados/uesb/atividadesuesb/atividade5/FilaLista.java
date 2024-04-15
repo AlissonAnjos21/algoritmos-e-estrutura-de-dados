@@ -40,4 +40,9 @@ public class FilaLista<T> implements Fila<T>{
         return temporario;
     } //fim desenfileirar
 
+    @Override
+    public String toString(){
+        return this.lista.toString();
+    }
+
 } //fim FilaLista

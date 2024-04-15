@@ -26,6 +26,22 @@ public class Teste {
 
         //FilaEncadeada
         System.out.println("\nFILA ENCADEADA: ");
+        FilaLista<Integer> filaLista = new FilaLista<>();
+
+        System.out.println(filaLista.estaVazia());
+
+        filaLista.enfileirar(1);
+        filaLista.enfileirar(2);
+        filaLista.enfileirar(3);
+        System.out.println(filaLista);
+
+        System.out.println(filaLista.getPrimeiro());
+
+        System.out.println(filaLista.desenfileirar());
+        System.out.println(filaLista);
+
+        filaLista.fazVazia();
+        System.out.println(filaLista);
 
     }
 }
