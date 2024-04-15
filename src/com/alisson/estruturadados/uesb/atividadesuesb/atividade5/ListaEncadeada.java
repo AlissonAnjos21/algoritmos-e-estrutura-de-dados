@@ -124,7 +124,7 @@ public class ListaEncadeada<T> {
         }
 
         if(ptr == this.tail){
-            prevPtr = this.tail;
+            this.tail = prevPtr;
         }
     }
 
