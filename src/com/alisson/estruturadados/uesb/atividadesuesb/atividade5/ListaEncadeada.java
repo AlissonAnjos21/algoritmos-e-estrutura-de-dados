@@ -1,4 +1,4 @@
-package com.alisson.estruturadados.uesb.atividadesuesb.atividade4;
+package com.alisson.estruturadados.uesb.atividadesuesb.atividade5;
 
 public class ListaEncadeada<T> {
     private Element head;
