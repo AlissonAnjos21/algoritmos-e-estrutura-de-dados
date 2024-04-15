@@ -27,5 +27,19 @@ public class Teste {
         System.out.println(lista.get(0));
 
         System.out.println(lista.procurarPosicao(1)); //retorná instância
+
+        System.out.println(lista);
+        lista.remover(5);
+        lista.remover(4);
+        lista.remover(3);
+        lista.remover(2);
+        System.out.println(lista);
+
+        lista.remover(1);
+
+        System.out.println(lista);
+
+        lista.inserir(21);
+        System.out.println(lista);
     }
 }
