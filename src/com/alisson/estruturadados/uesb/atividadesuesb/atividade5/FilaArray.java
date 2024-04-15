@@ -2,10 +2,10 @@ package com.alisson.estruturadados.uesb.atividadesuesb.atividade5;
 
 public class FilaArray<T> implements Fila<T> {
 
-    T[] array;
-    int head;
-    int tail;
-    int count;
+    private T[] array;
+    private int head;
+    private int tail;
+    private int count;
 
     public FilaArray(int tamanho){
         this.array = (T[]) new Object[tamanho];
