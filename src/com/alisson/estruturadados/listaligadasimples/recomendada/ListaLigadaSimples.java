@@ -46,7 +46,68 @@ public class ListaLigadaSimples<T> {
             anterior.setProximo(no);
             this.tamanho++;
         }
+    }
 
+    public T removerInicio(){
+        if(this.tamanho == 0){
+            throw new RuntimeException("A lista está vazia");
+        }
+
+        T removido = this.inicio.getElemento();
+        this.inicio = this.inicio.getProximo();
+        this.tamanho--;
+
+        if(this.tamanho == 0){
+            this.ultimo = null;
+        }
+        return removido;
+    }
+
+    public T removerFinal(){
+        if(this.tamanho == 0){
+            throw new RuntimeException("A lista está vazia");
+        }
+
+        if(this.tamanho == 1){
+            return this.removerInicio();
+        }
+
+        No<T> penultimoNo = this.buscarNo(this.tamanho - 2);
+        T removido = penultimoNo.getProximo().getElemento();
+
+        penultimoNo.setProximo(null);
+        this.ultimo = penultimoNo;
+        this.tamanho--;
+
+        return removido;
+    }
+
+    private boolean posicaoNaoExiste(int posicao){
+        return !(posicao >= 0 && posicao <= this.tamanho);
+    }
+
+    public T remover(int posicao){
+        if(this.posicaoNaoExiste(posicao)){
+            throw new IllegalArgumentException("A posição não existe");
+        }
+
+        if(posicao == 0){
+            return this.removerInicio();
+        }
+
+        if(posicao == this.tamanho - 1){
+            return this.removerFinal();
+        }
+
+        No<T> anterior = this.buscarNo(posicao - 1);
+        No<T> atual = anterior.getProximo();
+        No<T> proximo = atual.getProximo();
+
+        anterior.setProximo(proximo);
+        atual.setProximo(null);
+        this.tamanho--;
+
+        return atual.getElemento();
     }
 
     public int getTamanho(){

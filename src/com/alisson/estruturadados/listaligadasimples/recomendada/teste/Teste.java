@@ -56,5 +56,26 @@ public class Teste {
 //        lista.adicionarPosicao(5, 84); // Nao existe
         System.out.println(lista);
 
+        System.out.println("Remover inicio: ");
+        System.out.println(lista);
+        lista.removerInicio();
+        System.out.println(lista);
+
+        System.out.println("Remover final: ");
+        System.out.println(lista);
+        lista.removerFinal();
+        System.out.println(lista);
+
+        System.out.println("Remover na posicao: ");
+        System.out.println(lista);
+        lista.remover(1);
+        System.out.println(lista);
+        lista.adicionarInicio(3);
+        lista.adicionarInicio(2);
+        lista.adicionarInicio(1);
+        System.out.println(lista);
+        lista.remover(1);
+        System.out.println(lista);
+
     }
 }
