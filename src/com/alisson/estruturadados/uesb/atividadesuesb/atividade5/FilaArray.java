@@ -69,5 +69,19 @@ public class FilaArray<T> implements Fila<T> {
         return resultado;
     } //fim desenfileirar
 
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        if(this.count > 0){
+            for(int i = this.head; i < this.tail; i++){
+                sb.append(this.array[i]);
+                sb.append(", ");
+            }
+            sb.append(this.array[this.tail]);
+        }
+        sb.append("]");
+        return sb.toString();
+    } //fim toString
 
 } //fim FilaArray
