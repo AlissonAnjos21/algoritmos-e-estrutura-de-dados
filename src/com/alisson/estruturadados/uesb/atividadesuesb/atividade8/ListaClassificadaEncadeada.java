@@ -1,5 +1,7 @@
 package com.alisson.estruturadados.uesb.atividadesuesb.atividade8;
 
+import java.util.Comparator;
+
 public class ListaClassificadaEncadeada<T> implements ListaClassificada<T>{
 
     private ListaEncadeada<T> lista;
@@ -38,7 +40,35 @@ public class ListaClassificadaEncadeada<T> implements ListaClassificada<T>{
     } //fim MeuCursor
 
     public void inserir(T elemento){
-        this.lista.inserirFim(elemento);
+        ListaEncadeada<T>.Element temp = this.lista.new Element(elemento, null);
+
+        if(this.lista.getHead() == null){
+            this.lista.setHead(temp);
+            this.count++;
+            return;
+        }
+        if (((Comparable<T>) elemento).compareTo(this.lista.getHead().getData()) < 0) {
+                temp.next = this.lista.getHead();
+                this.lista.setHead(temp);
+                this.count++;
+                return;
+        }
+
+        ListaEncadeada<T>.Element atual = this.lista.getHead();
+        while(atual.getNext() != null){
+            ListaEncadeada<T>.Element proximo = atual.getNext();
+            int comparacao;
+            comparacao = ((Comparable<T>) elemento).compareTo(proximo.getData());
+
+            if(comparacao < 0){
+                temp.next = proximo;
+                atual.next = temp;
+                this.count++;
+                return;
+            }
+            atual = proximo;
+        }
+        atual.next = temp;
         this.count++;
     } //fim inserir
 

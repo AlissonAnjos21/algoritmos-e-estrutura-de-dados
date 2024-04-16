@@ -54,6 +54,14 @@ public class ListaEncadeada<T> {
         return this.head;
     }
 
+    public void setHead(Element head){
+        this.head = head;
+    }
+
+    public void setTail(Element tail){
+        this.tail = tail;
+    }
+
     public Element getTail(){
         return this.tail;
     }
