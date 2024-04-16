@@ -1,7 +1,5 @@
 package com.alisson.estruturadados.uesb.atividadesuesb.atividade8;
 
-import java.util.Comparator;
-
 public class ListaClassificadaEncadeada<T> implements ListaClassificada<T>{
 
     private ListaEncadeada<T> lista;
