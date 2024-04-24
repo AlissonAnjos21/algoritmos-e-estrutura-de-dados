@@ -35,6 +35,12 @@ public class Teste {
         System.out.println(tree.search(21));
         System.out.println(tree.search(8));
         System.out.println(tree.search(25));
+        tree.remove(15);
+        tree.inOrderTraverse();
+        System.out.println();
+        tree.preOrderTraverser();
+        System.out.println();
+        tree.postOrderTraverser();
 
     }
 }

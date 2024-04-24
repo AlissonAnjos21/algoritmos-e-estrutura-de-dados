@@ -108,4 +108,38 @@ public class BinarySearchTree<T> {
         }
     }
 
+    public void remove(T key){
+        this.root = this.removeNode(this.root, key);
+    }
+
+    private Node<T> removeNode(Node<T> node, T key){
+        if(node == null){
+            return null;
+        }
+        if(((Comparable<T>) key).compareTo(node.key) < 0){
+            node.left = this.removeNode(node.left, key);
+            return node;
+        }else if(((Comparable<T>) key).compareTo(node.key) > 0){
+            node.right = this.removeNode(node.right, key);
+            return node;
+        }else{
+            if(node.left == null && node.right == null){
+                node = null;
+                return node;
+            }
+            if(node.left == null){
+                node = node.right;
+                return node;
+            }else if(node.right == null){
+                node = node.left;
+                return node;
+            }
+            Node<T> aux = this.minNode(node.right);
+            node.key = aux.key;
+            node.right = this.removeNode(node.right, aux.key);
+            return node;
+
+        }
+    }
+
 }
