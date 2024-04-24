@@ -69,4 +69,16 @@ public class BinarySearchTree<T> {
         }
     }
 
+    public Node<T> min(){
+        return this.minNode(this.root);
+    }
+
+    private Node<T> minNode(Node<T> node){
+        Node<T> current = node;
+        while(current != null && current.left != null){
+            current = current.left;
+        }
+        return current;
+    }
+
 }
