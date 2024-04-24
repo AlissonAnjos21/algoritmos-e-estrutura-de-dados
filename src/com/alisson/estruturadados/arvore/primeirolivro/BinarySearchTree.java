@@ -1,7 +1,5 @@
 package com.alisson.estruturadados.arvore.primeirolivro;
 
-import java.util.function.Consumer;
-
 public class BinarySearchTree<T> {
     Node<T> root;
 
@@ -91,6 +89,23 @@ public class BinarySearchTree<T> {
             current = current.right;
         }
         return current;
+    }
+
+    public boolean search(T key){
+        return this.searchNode(this.root, key);
+    }
+
+    private boolean searchNode(Node<T> node, T key){
+        if(node == null){
+            return false;
+        }
+        if(((Comparable<T>) key).compareTo(node.key) < 0){
+            return this.searchNode(node.left, key);
+        }else if(((Comparable<T>) key).compareTo(node.key) > 0){
+            return this.searchNode(node.right, key);
+        }else{
+            return true;
+        }
     }
 
 }

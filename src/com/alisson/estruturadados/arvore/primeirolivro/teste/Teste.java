@@ -31,6 +31,10 @@ public class Teste {
         System.out.println();
         System.out.println("Min = " + tree.min().getKey());
         System.out.println("Max = " + tree.max().getKey());
+        System.out.println(tree.search(11));
+        System.out.println(tree.search(21));
+        System.out.println(tree.search(8));
+        System.out.println(tree.search(25));
 
     }
 }
