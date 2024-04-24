@@ -4,7 +4,6 @@ import java.util.function.Consumer;
 
 public class BinarySearchTree<T> {
     Node<T> root;
-    Consumer<T> printer = p -> System.out.print(p + " ");
 
     public BinarySearchTree(){
         this.root = null;
@@ -41,7 +40,7 @@ public class BinarySearchTree<T> {
     private void inOrderTraverseNode(Node<T> node){
         if(node != null){
             this.inOrderTraverseNode(node.left);
-            this.printer.accept(node.key);
+            System.out.print(node.key + " ");
             this.inOrderTraverseNode(node.right);
         }
     }
@@ -52,7 +51,7 @@ public class BinarySearchTree<T> {
 
     private void preOrderTraverseNode(Node<T> node){
         if(node != null){
-            this.printer.accept(node.key);
+            System.out.print(node.key + " ");
             this.preOrderTraverseNode(node.left);
             this.preOrderTraverseNode(node.right);
         }
@@ -66,7 +65,7 @@ public class BinarySearchTree<T> {
         if(node != null){
             this.postOrderTraverseNode(node.left);
             this.postOrderTraverseNode(node.right);
-            this.printer.accept(node.key);
+            System.out.print(node.key + " ");
         }
     }
 
