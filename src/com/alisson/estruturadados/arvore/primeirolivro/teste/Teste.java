@@ -27,6 +27,10 @@ public class Teste {
         tree.preOrderTraverser();
         System.out.println();
         tree.postOrderTraverser();
+        System.out.println();
+        System.out.println();
+        System.out.println("Min = " + tree.min().getKey());
+        System.out.println("Max = " + tree.max().getKey());
 
     }
 }

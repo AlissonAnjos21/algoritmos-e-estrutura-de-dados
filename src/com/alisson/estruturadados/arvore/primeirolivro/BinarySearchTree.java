@@ -81,4 +81,16 @@ public class BinarySearchTree<T> {
         return current;
     }
 
+    public Node<T> max(){
+        return this.maxNode(this.root);
+    }
+
+    private Node<T> maxNode(Node<T> node){
+        Node<T> current = node;
+        while(current != null && current.right != null){
+            current = current.right;
+        }
+        return current;
+    }
+
 }
