@@ -1,2 +1,6 @@
-package com.alisson.estruturadados.pilhaencadeada.propria;public class PilhaEncadeada {
+package com.alisson.estruturadados.pilhaencadeada.propria;
+
+public class PilhaEncadeada<T>{
+
+
 }
