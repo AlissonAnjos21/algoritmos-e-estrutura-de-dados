@@ -1,4 +1,4 @@
-package com.alisson.estruturadados.uesb.atividadesuesb.atividadetestarclasseavl;
+package com.alisson.estruturadados.uesb.atividadesuesb.atividadehashdeenderecamentofechadocomarvoreavl;
 
 public class AVL<T> extends Node<T> {
     /*

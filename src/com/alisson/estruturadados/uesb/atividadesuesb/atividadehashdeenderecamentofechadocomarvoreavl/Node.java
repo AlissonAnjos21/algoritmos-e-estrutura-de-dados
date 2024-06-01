@@ -1,4 +1,4 @@
-package com.alisson.estruturadados.uesb.atividadesuesb.atividadetestarclasseavl;
+package com.alisson.estruturadados.uesb.atividadesuesb.atividadehashdeenderecamentofechadocomarvoreavl;
 
 //essa versao da classe Node<T> utililiza as classes pilhas e filas do proprio java.
 import java.util.LinkedList;//lista encadeada do java, usada na pilha e na fila
@@ -44,6 +44,8 @@ public class Node<T> {
         filho_esq = NoEsq;
         filho_dir = NoDir;
     }
+
+    public Node(){}
 
     // retorna o conteudo ou valor do no da arvore
     public T getValor(){
@@ -449,3 +451,4 @@ public class Node<T> {
     }
 
 }
+

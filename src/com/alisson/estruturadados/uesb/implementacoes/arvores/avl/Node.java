@@ -1,4 +1,4 @@
-package com.alisson.estruturadados.uesb.atividadesuesb.atividadetestarclasseavl;
+package com.alisson.estruturadados.uesb.implementacoes.arvores.avl;
 
 //essa versao da classe Node<T> utililiza as classes pilhas e filas do proprio java.
 import java.util.LinkedList;//lista encadeada do java, usada na pilha e na fila
@@ -7,8 +7,8 @@ import java.util.Stack;//pilha
 
 public class Node<T> {
 
-    private T valor;   /* Valor armazenado na raiz. */
-    private Node<T> filho_esq, filho_dir; /* Referências para sub-árvores. */
+    protected T valor;   /* Valor armazenado na raiz. */
+    protected Node<T> filho_esq, filho_dir; /* Referências para sub-árvores. */
 
     /*contruir os metodos da arvore
      * - construtor
