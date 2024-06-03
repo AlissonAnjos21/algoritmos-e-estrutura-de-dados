@@ -17,10 +17,16 @@ public class HashEncadeamentoDireto {
         return chave % this.m;
     }
 
-    public LinkedList<Elemento> buscar(int chave){
+    public Elemento buscar(int chave) {
         int h;
         h = this.calcularHash(chave);
-        return this.tabelaHash[h];
+        int tamanho = this.tabelaHash[h].size();
+        for (int i = 0; i < tamanho; i++) {
+            if (this.tabelaHash[h].get(i).getChave() == chave) {
+                return this.tabelaHash[h].get(i);
+            }
+        }
+        return null;
     }
 
     public void inserir(int chave, int valor){
