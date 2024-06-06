@@ -25,12 +25,27 @@ public class Teste {
         avl.InsereOrdenado(35, null);
 
         avl.imprimeEmLargura();
+        System.out.println();
 
         avl.removerNode(50, null);
-//        avl.removerNode(95, );
-//        avl.removerNode(70, );
-//        avl.removerNode(60, );
-//        avl.removerNode(35, );
+        avl.imprimeEmLargura();
+        System.out.println();
+
+        avl.removerNode(95, avl.acharPai(avl.pesquisarValor(95)));
+        avl.imprimeEmLargura();
+        System.out.println();
+
+        avl.removerNode(70,  avl.acharPai(avl.pesquisarValor(70)));
+        avl.imprimeEmLargura();
+        System.out.println();
+
+        avl.removerNode(60,  avl.acharPai(avl.pesquisarValor(60)));
+        avl.imprimeEmLargura();
+        System.out.println();
+
+        avl.removerNode(35,  avl.acharPai(avl.pesquisarValor(35)));
+        avl.imprimeEmLargura();
+        System.out.println();
 
     }
 }
