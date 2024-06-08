@@ -1,6 +1,6 @@
-package com.alisson.estruturadados.arvore.primeirolivro.teste;
+package com.alisson.estruturadados.arvore.livroloiane.teste;
 
-import com.alisson.estruturadados.arvore.primeirolivro.BinarySearchTree;
+import com.alisson.estruturadados.arvore.livroloiane.BinarySearchTree;
 
 public class Teste {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.alisson.estruturadados.arvore.primeirolivro;
+package com.alisson.estruturadados.arvore.livroloiane;
 
 public class Node<T> {
     T key;
